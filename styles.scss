@@ -1,0 +1,50 @@
+$camel:#AA8F66;
+$carrotOrange:#ED9B40;
+$antiqueWhite:#FFEEDB;
+
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $camel;
+}
+
+#bg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 105px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 30px;
+    background-color: $antiqueWhite;
+    padding: 1px;
+
+    #one{
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        margin: 5px;
+        background-color: $carrotOrange;
+        display: block;
+        transition: 0.15s ease-in;
+    }
+
+    #one.active{
+        margin: 5px 5px 5px 65px;
+
+    }
+
+    #one:hover{
+        cursor: pointer;
+    }
+}
+
+#bg:hover{
+    cursor: pointer;
+}
